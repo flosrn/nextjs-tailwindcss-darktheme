@@ -1,6 +1,7 @@
 {
-  "name": "with-tailwindcss",
+  "name": "nextjs-tailwindcss-darktheme",
   "version": "1.0.0",
+  "author": "Flosrn",
   "scripts": {
     "dev": "next",
     "build": "next build",
