@@ -1,9 +1,9 @@
-import Link from 'next/link'
+import Link from "next/link";
 
 const links = [
-  { href: 'https://github.com/vercel/next.js', label: 'GitHub' },
-  { href: 'https://nextjs.org/docs', label: 'Docs' },
-]
+  { href: "https://github.com/vercel/next.js", label: "GitHub" },
+  { href: "https://nextjs.org/docs", label: "Docs" },
+];
 
 export default function Nav() {
   return (
@@ -13,6 +13,11 @@ export default function Nav() {
           <Link href="/">
             <a className="text-blue-500 no-underline text-accent-1 dark:text-blue-300">
               Home
+            </a>
+          </Link>
+          <Link href="/about">
+            <a className="text-blue-500 no-underline text-accent-1 dark:text-blue-300 ml-6">
+              About
             </a>
           </Link>
         </li>
@@ -27,5 +32,5 @@ export default function Nav() {
         </ul>
       </ul>
     </nav>
-  )
+  );
 }

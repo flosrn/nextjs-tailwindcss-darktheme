@@ -1,7 +1,9 @@
-import React from "react";
+import React, { useContext } from "react";
 import { Switch } from "@headlessui/react";
+import { ThemeContext } from "../lib/theme-context";
 
-const SwitchButton = ({ switchValue, switchHandler }) => {
+const SwitchButton = () => {
+  const { switchValue, switchHandler } = useContext(ThemeContext);
   return (
     <div className="flex items-center justify-center p-2">
       <div className="w-full max-w-xs mx-auto">
